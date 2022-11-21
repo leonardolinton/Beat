@@ -1,0 +1,74 @@
+/*===== MAIN START =====*/
+
+.main {
+    background-color: var(--color-two);
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+}
+.main-txt {
+    max-width: 1220px;
+}
+
+.main-txt h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    color: var(--color-three);
+    margin-bottom: 50px;
+}
+
+.main-txt p {
+    font-size: var(--f1-font-size);
+    font-weight: var(--font-regular);
+    color: var(--color-four);
+}
+
+.main-imgs {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+.main-img {
+    max-width: 640px;
+    max-height: 340px;
+    margin: 25px 5.5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+.main-img img:hover {
+    transform: scale(1.5);
+}
+
+.main-box span {
+    text-align: center;
+    font-size: var(--f1-font-size);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.main-box span:hover {
+    transform: scale(1.5);
+}
+
+/*===== MAIN END =====*/
+
+/*===== MAIN RESPONSIVE =====*/
+@media screen and (max-width: 950px) {
+    .main-box {
+        text-align: center;
+    }
+}

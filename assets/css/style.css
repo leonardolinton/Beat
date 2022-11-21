@@ -1,0 +1,94 @@
+/*===== BASE =====*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*===== SELECTION =====*/
+::selection {
+    background-color: var(--color-one);
+    color: var(--color-three);
+}
+
+/*===== SCROLLBAR =====*/
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-four);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-one);
+    border: 2px solid var(--color-four);
+    border-radius: 25px;
+}
+
+/*===== REUSABLE CSS CLASSES =====*/
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: var(--max-width);
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --max-width: 1366px;
+}
+
+/*===== FONT SIZE =====*/
+/*1rem = 16px*/
+:root {
+    --h1-font-size: 4rem;
+    --h2-font-size: 3rem;
+    --f1-font-size: 1.875rem;
+
+    /*===== FONT WEIGHT =====*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*===== TYPOGRAPHY =====*/
+    --primary-font: "Roboto", sans-serif;
+
+    /*===== COLORS =====*/
+    --color-one: #129799;
+    --color-two: #ffa185;
+    --color-three: #f7f7f7;
+    --color-four: #000000;
+}
+
+/*===== FONTS RESPONSIVE =====*/
+@media screen and (max-width: 950px) {
+    :root {
+        --h1-font-size: 3.5rem;
+        --h2-font-size: 2.5rem;
+        --f1-font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+        --f1-font-size: 1rem;
+    }
+}

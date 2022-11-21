@@ -1,0 +1,72 @@
+/*===== HEDAER START =====*/
+.header {
+    width: 100%;
+    height: 600px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-one);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    list-style: none;
+    color: var(--color-three);
+    font-size: var(--f1-font-size);
+    font-weight: var(--font-regular);
+}
+
+.nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav ul li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home h1 {
+    font-size: var(--h1-font-size);
+    color: var(--color-three);
+}
+
+.banner {
+    max-width: 640px;
+    animation: banner 2s ease-out 0s infinite normal forwards;
+}
+
+.banner img {
+    width: 100%;
+}
+/*===== HEDAER END =====*/
+
+/*===== HEDAER RESPONSIVE =====*/
+@media screen and (max-width: 950px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home h1 {
+        text-align: center;
+    }
+
+    .nav ul {
+        text-align: center;
+        gap: 25px;
+    }
+}
