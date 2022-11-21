@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://leonardolinton.github.io/fitgym/">Vai na Web - Beat</a>🎧</h1>
+<h1 align="center"><a href="https://leonardolinton.github.io/Beat/">Vai na Web - Beat</a>🎧</h1>
 
 ![preview](https://user-images.githubusercontent.com/109364804/203152005-5e182f4b-07c3-4d5c-a0dc-3d2dc1b88013.png)
 
